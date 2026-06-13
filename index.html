@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>PZ Bouw &amp; Timmerwerken Purmerend — Vakmanschap van plint tot complete verbouwing</title>
+<meta name="description" content="PZ Bouw & Timmerwerken in Purmerend: dakkapellen, aanbouw, renovatie, kozijnen, trappen, deuren, badkamers en onderhoud. Traditioneel vakmanschap met moderne technieken.">
+<meta name="keywords" content="timmerwerken,timmerman,purmerend,dakkapel,aanbouw,renovatie,kozijnen,trappen,deuren,badkamer,onderhoud,noord-holland">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="PZ Bouw & Timmerwerken Purmerend">
+<meta property="og:description" content="Traditioneel vakmanschap gecombineerd met moderne technieken. Van plint tot complete verbouwing.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo-bouw.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#8a6a1e;
+  --gold-soft:#a9842f;
+  --gold-bright:#c19a44;
+  --ink:#1c1813;
+  --ink-soft:#4a4337;
+  --cream:#f7f3ea;
+  --cream-2:#efe7d6;
+  --paper:#fffdf9;
+  --line:rgba(28,24,19,.12);
+  --shadow:0 18px 50px -20px rgba(28,24,19,.35);
+  --maxw:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.08;font-weight:600;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{
+  font-family:'Inter';font-size:.78rem;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:14px;
+}
+
+/* ---------- Header ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,253,249,.82);
+  backdrop-filter:saturate(160%) blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center}
+.brand img{height:62px;width:auto}
+.menu{display:flex;align-items:center;gap:34px}
+.menu a{font-size:.93rem;font-weight:500;color:var(--ink-soft);transition:color .2s}
+.menu a:hover{color:var(--gold)}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--gold);color:#fff;font-weight:600;font-size:.92rem;
+  padding:12px 22px;border-radius:999px;border:1px solid var(--gold);
+  transition:transform .18s ease,background .2s,box-shadow .2s;
+  box-shadow:0 10px 24px -12px rgba(138,106,30,.7);
+}
+.btn:hover{background:var(--ink);border-color:var(--ink);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(120% 90% at 85% -10%,rgba(193,154,68,.18),transparent 60%),
+    linear-gradient(180deg,var(--cream) 0%,var(--paper) 100%);
+}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;padding:84px 0 92px}
+.hero h1{font-size:clamp(2.5rem,5.4vw,4.25rem);margin:10px 0 22px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:1.16rem;color:var(--ink-soft);max-width:46ch;margin-bottom:32px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-stats{display:flex;gap:34px;margin-top:46px;padding-top:30px;border-top:1px solid var(--line)}
+.hero-stats div b{display:block;font-family:'Fraunces';font-size:1.9rem;color:var(--gold);font-weight:700}
+.hero-stats div small{font-size:.84rem;color:var(--ink-soft);letter-spacing:.03em}
+.hero-visual{position:relative}
+.hero-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:24px;
+  padding:42px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden;
+}
+.hero-card::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(193,154,68,.08),transparent 55%)}
+.hero-card img{height:78px;width:auto;margin-bottom:26px;position:relative}
+.hero-card h3{font-size:1.4rem;margin-bottom:10px;position:relative}
+.hero-card p{color:var(--ink-soft);position:relative;margin-bottom:24px}
+.chips{display:flex;flex-wrap:wrap;gap:9px;position:relative}
+.chip{font-size:.82rem;font-weight:500;background:var(--cream-2);color:var(--ink-soft);padding:7px 14px;border-radius:999px}
+
+/* ---------- Section base ---------- */
+section{padding:92px 0}
+.sec-head{max-width:640px;margin-bottom:52px}
+.sec-head h2{font-size:clamp(2rem,3.6vw,2.85rem);margin-bottom:16px}
+.sec-head p{color:var(--ink-soft);font-size:1.08rem}
+
+/* ---------- Services ---------- */
+.services{background:var(--cream)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:18px;
+  padding:32px 30px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s;
+}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(138,106,30,.35)}
+.card .ic{
+  width:50px;height:50px;border-radius:13px;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--gold),var(--gold-bright));color:#fff;margin-bottom:20px;
+}
+.card .ic svg{width:24px;height:24px}
+.card h3{font-size:1.22rem;margin-bottom:9px}
+.card p{color:var(--ink-soft);font-size:.96rem}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-grid .visual{
+  border-radius:24px;min-height:420px;position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#fff 0%,var(--cream) 55%,var(--cream-2) 100%);
+  border:1px solid var(--line);box-shadow:var(--shadow);display:grid;place-items:center;padding:48px;
+}
+.about-grid .visual::after{content:"";position:absolute;inset:0;
+  background:radial-gradient(80% 70% at 80% 10%,rgba(193,154,68,.16),transparent 60%)}
+.about-grid .visual img{position:relative;max-width:80%;height:auto}
+.about-grid h2{font-size:clamp(2rem,3.4vw,2.7rem);margin-bottom:20px}
+.about-grid p{color:var(--ink-soft);margin-bottom:16px}
+.feat{display:flex;gap:12px;margin-top:20px}
+.feat li{list-style:none;display:flex;align-items:center;gap:10px;font-weight:500;font-size:.95rem}
+.feat svg{width:20px;height:20px;color:var(--gold);flex:0 0 auto}
+.about-feats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+
+/* ---------- Reviews ---------- */
+.reviews{background:var(--ink);color:var(--cream)}
+.reviews .eyebrow{color:var(--gold-bright)}
+.reviews .sec-head h2{color:var(--paper)}
+.reviews .sec-head p{color:rgba(247,243,234,.7)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{
+  background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
+  border-radius:18px;padding:30px 28px;display:flex;flex-direction:column;gap:16px;
+}
+.stars{color:var(--gold-bright);font-size:1.05rem;letter-spacing:2px}
+.rev p{color:rgba(247,243,234,.9);font-size:1rem;line-height:1.7;flex:1}
+.rev .who{display:flex;align-items:center;gap:13px}
+.rev .av{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--gold),var(--gold-bright));color:#fff;font-weight:700;font-family:'Fraunces'}
+.rev .who b{font-family:'Inter';font-weight:600;font-size:.95rem;color:var(--paper)}
+.rev .who small{display:block;color:rgba(247,243,234,.5);font-size:.8rem}
+.rev-foot{text-align:center;margin-top:42px;color:rgba(247,243,234,.7);font-size:.95rem}
+.rev-foot b{color:var(--gold-bright)}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:stretch}
+.contact-info h2{font-size:clamp(2rem,3.4vw,2.7rem);margin-bottom:18px}
+.contact-info p.lead{color:var(--ink-soft);font-size:1.08rem;margin-bottom:34px}
+.cline{display:flex;gap:16px;align-items:flex-start;padding:18px 0;border-top:1px solid var(--line)}
+.cline:last-child{border-bottom:1px solid var(--line)}
+.cline .ic{width:46px;height:46px;border-radius:12px;flex:0 0 auto;display:grid;place-items:center;
+  background:var(--paper);border:1px solid var(--line);color:var(--gold)}
+.cline .ic svg{width:22px;height:22px}
+.cline b{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft);margin-bottom:3px}
+.cline a,.cline span{font-size:1.08rem;font-weight:500;color:var(--ink)}
+.contact-card{
+  background:var(--paper);border:1px solid var(--line);border-radius:24px;
+  padding:40px;box-shadow:var(--shadow);
+}
+.contact-card h3{font-size:1.5rem;margin-bottom:8px}
+.contact-card .sub{color:var(--ink-soft);margin-bottom:26px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.84rem;font-weight:600;margin-bottom:7px;color:var(--ink-soft)}
+.field input,.field textarea{
+  width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:11px;
+  font-family:inherit;font-size:.97rem;background:var(--cream);transition:border-color .2s,box-shadow .2s;
+}
+.field input:focus,.field textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 4px rgba(138,106,30,.12);background:#fff}
+.field textarea{resize:vertical;min-height:110px}
+.contact-card .btn{width:100%;justify-content:center;margin-top:6px}
+.note{font-size:.82rem;color:var(--ink-soft);text-align:center;margin-top:14px}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:rgba(247,243,234,.7);padding:60px 0 30px}
+.foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand{max-width:320px}
+.foot-brand img{height:54px;width:auto;background:var(--paper);padding:10px 14px;border-radius:12px;margin-bottom:18px}
+.foot-brand p{font-size:.92rem;line-height:1.7}
+.foot-col h4{font-family:'Inter';color:var(--paper);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.foot-col a,.foot-col span{display:block;font-size:.93rem;margin-bottom:9px;color:rgba(247,243,234,.7);transition:color .2s}
+.foot-col a:hover{color:var(--gold-bright)}
+.social{display:flex;gap:12px;margin-top:6px}
+.social a{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:var(--cream);transition:.2s}
+.social a:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+.social svg{width:18px;height:18px}
+.demo-banner{
+  margin-top:34px;text-align:center;background:rgba(193,154,68,.12);
+  border:1px solid rgba(193,154,68,.3);border-radius:16px;padding:22px 26px;
+}
+.demo-banner b{color:var(--gold-bright)}
+.demo-banner a{color:var(--gold-bright);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.copy{text-align:center;font-size:.82rem;margin-top:26px;color:rgba(247,243,234,.45)}
+
+/* ---------- Reveal ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:920px){
+  .hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr;gap:44px}
+  .grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .about-grid .visual{min-height:300px;order:-1}
+}
+@media(max-width:680px){
+  .menu{display:none}
+  .burger{display:flex}
+  .menu.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;
+    background:var(--paper);border-bottom:1px solid var(--line);padding:20px 24px;gap:18px;box-shadow:var(--shadow)}
+  .grid,.rev-grid,.about-feats{grid-template-columns:1fr}
+  .hero-stats{gap:22px;flex-wrap:wrap}
+  section{padding:64px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <img src="logo-bouw.jpg" alt="PZ Bouw & Timmerwerken Purmerend">
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#diensten">Diensten</a>
+      <a href="#over">Over ons</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#contact">Offerte aanvragen</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="reveal in">
+      <div class="eyebrow">Bouw &amp; Timmerwerken · Purmerend</div>
+      <h1>Vakmanschap, <em>van plint</em> tot complete verbouwing.</h1>
+      <p class="lead">Een vakkundig bedrijf met veel oog voor klantgerichtheid. Traditioneel vakmanschap gecombineerd met moderne technieken — maatwerk en goede service in heel Noord-Holland.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#contact">Vrijblijvend contact</a>
+        <a class="btn ghost" href="#diensten">Bekijk onze diensten</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>★ 5,0</b><small>Klantbeoordeling</small></div>
+        <div><b>10+</b><small>Jaar ervaring</small></div>
+        <div><b>A&nbsp;–&nbsp;Z</b><small>Eén aanspreekpunt</small></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal in">
+      <div class="hero-card">
+        <img src="logo-bouw.jpg" alt="PZ Bouw & Timmerwerken">
+        <h3>Patrick van Zal</h3>
+        <p>Persoonlijk en betrokken. Van een nieuwe dakkapel tot aanbouw, renovatie of badkamer — alles wat er aan timmerwerk in en om het huis te doen is.</p>
+        <div class="chips">
+          <span class="chip">Dakkapellen</span>
+          <span class="chip">Aanbouw</span>
+          <span class="chip">Renovatie</span>
+          <span class="chip">Kozijnen</span>
+          <span class="chip">Trappen</span>
+          <span class="chip">Badkamers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="diensten">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Wat wij doen</div>
+      <h2>Alle voorkomende timmer- en bouwwerkzaamheden</h2>
+      <p>Onze activiteiten zijn breed. Waar nodig werken we samen met gespecialiseerde collega's — een elektricien, tegelzetter of metselaar — zodat u één aanspreekpunt houdt.</p>
+    </div>
+    <div class="grid">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Dakkapellen</h3>
+        <p>Meer ruimte en licht onder het dak. Een prachtige dakkapel, vakkundig op maat geplaatst.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 21h18"/><path d="M9 21v-6h6v6"/></svg></div>
+        <h3>Aanbouw &amp; uitbouw</h3>
+        <p>Extra leefruimte aan uw woning, van fundering tot afwerking, geheel naar wens.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 4l6 6L8 22H2v-6z"/><path d="M11 7l6 6"/></svg></div>
+        <h3>Renovatie &amp; verbouwing</h3>
+        <p>Van een enkele ruimte tot een complete verbouwing, met oog voor detail en advies.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M14 12h.01"/><path d="M4 9h16"/></svg></div>
+        <h3>Kozijnen, deuren &amp; pui</h3>
+        <p>Nieuwe of vervangende kozijnen, deuren en puien — strak afgewerkt en duurzaam.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20h4v-4h4v-4h4V8h4"/><path d="M4 20V4"/></svg></div>
+        <h3>Trappen</h3>
+        <p>Maatwerk trappen die perfect passen bij uw interieur en intensief gebruik aankunnen.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h2v8M15 8a2 2 0 1 1 0 4h-2"/></svg></div>
+        <h3>Badkamers</h3>
+        <p>Complete badkamerrenovatie, in samenwerking met vaste vakgenoten waar nodig.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V7l4-3 4 3v14M13 21V9l4-3 4 3v12M3 21h18"/></svg></div>
+        <h3>Schuttingen &amp; tuin</h3>
+        <p>Schuttingen, vlonders en houtwerk in de tuin — stevig en mooi afgewerkt.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12l9-9 9 9"/><path d="M5 10v10h14V10"/><path d="M3 12h18"/></svg></div>
+        <h3>Dakwerk</h3>
+        <p>Onderhoud en herstel van het dak, vakkundig en met aandacht voor afwatering.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21l2.3-7.1-6-4.5h7.6z"/></svg></div>
+        <h3>Onderhoud &amp; divers</h3>
+        <p>Klein onderhoud tot grotere klussen — alles wat er aan timmerwerk te doen is.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="over">
+  <div class="wrap about-grid">
+    <div class="visual reveal">
+      <img src="logo-bouw.jpg" alt="PZ Bouw & Timmerwerken">
+    </div>
+    <div class="reveal">
+      <div class="eyebrow">Over ons</div>
+      <h2>Traditioneel vakmanschap, moderne technieken</h2>
+      <p>Bouw &amp; PZ Timmerwerken verzorgt alle voorkomende timmer- en bouwwerkzaamheden. Maatwerk en goede service van plint tot aan een complete verbouwing.</p>
+      <p>Oog voor detail en eerlijk advies — ook over dingen die u zelf misschien nog niet had bedacht. Fijn om mee samen te werken, kwaliteit waar u op kunt bouwen.</p>
+      <div class="about-feats">
+        <ul class="feat"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Persoonlijk contact</li></ul>
+        <ul class="feat"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Maatwerk &amp; advies</li></ul>
+        <ul class="feat"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Bedrijf én particulier</li></ul>
+        <ul class="feat"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Eén aanspreekpunt</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Wat klanten zeggen</div>
+      <h2>Beoordeeld met een dikke voldoende</h2>
+      <p>Een greep uit de ervaringen van klanten die PZ Bouw &amp; Timmerwerken inschakelden.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Prima vakman die goed weet wat ie doet en kwaliteit levert. Hij heeft voor ons een grote verbouwing gedaan, heeft oog voor detail en geeft advies over dingen die we zelf nog niet hadden bedacht. Fijn om mee samen te werken."</p>
+        <div class="who"><div class="av">A</div><div><b>Adriaan Hoogvliet</b><small>Verbouwing · een jaar geleden</small></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Super vakman. Zeer goed en mooi werk afgeleverd. Topper, bedankt!"</p>
+        <div class="who"><div class="av">A</div><div><b>Arie De Valk</b><small>Timmerwerk · een jaar geleden</small></div></div>
+      </div>
+      <div class="rev reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Ze hebben bij mij een prachtige dakkapel op het dak gezet. Erg blij mee!"</p>
+        <div class="who"><div class="av">D</div><div><b>Dennis van Tiel</b><small>Dakkapel · 3 jaar geleden</small></div></div>
+      </div>
+    </div>
+    <p class="rev-foot">Beoordelingen afkomstig van <b>Google</b> · gemiddeld <b>5,0 / 5,0</b></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow">Contact</div>
+      <h2>Vragen? Neem gerust contact op.</h2>
+      <p class="lead">Meer informatie over onze werkzaamheden of een offerte aanvragen? Stuur een bericht en ik neem zo spoedig mogelijk contact met u op. — Mvg, Patrick van Zal</p>
+
+      <div class="cline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></div>
+        <div><b>Telefoon</b><a href="tel:0643092140">06 43 09 21 40</a></div>
+      </div>
+      <div class="cline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></div>
+        <div><b>E-mail</b><a href="mailto:Pvanzal@live.nl">Pvanzal@live.nl</a></div>
+      </div>
+      <div class="cline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><b>Adres</b><span>Kempenland 53, 1447 CV Purmerend</span></div>
+      </div>
+      <div class="cline">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M3 12h18M3 17h18"/></svg></div>
+        <div><b>KvK</b><span>82221448</span></div>
+      </div>
+    </div>
+
+    <div class="contact-card reveal">
+      <h3>Stuur een bericht</h3>
+      <p class="sub">Vul uw gegevens in en uw klus, dan nemen we contact op.</p>
+      <form id="contactForm">
+        <div class="field"><label for="naam">Naam</label><input id="naam" name="naam" type="text" placeholder="Uw naam" required></div>
+        <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="naam@voorbeeld.nl" required></div>
+        <div class="field"><label for="bericht">Uw klus of vraag</label><textarea id="bericht" name="bericht" placeholder="Vertel kort waar we u mee kunnen helpen…" required></textarea></div>
+        <button class="btn" type="submit">Verstuur aanvraag</button>
+        <p class="note">Dit is een demoformulier — gebruik gerust telefoon of e-mail voor een echte aanvraag.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="logo-bouw.jpg" alt="PZ Bouw & Timmerwerken">
+        <p>Bouw &amp; PZ Timmerwerken — vakkundig timmer- en bouwbedrijf in Purmerend. Maatwerk en goede service van plint tot complete verbouwing.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/PZ-timmerwerken-108074561371934" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H7v3h3v6h3v-6h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="mailto:Pvanzal@live.nl" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 6l10 7 10-7"/></svg></a>
+          <a href="tel:0643092140" aria-label="Telefoon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4>Diensten</h4>
+        <a href="#diensten">Dakkapellen</a>
+        <a href="#diensten">Aanbouw &amp; uitbouw</a>
+        <a href="#diensten">Renovatie</a>
+        <a href="#diensten">Kozijnen &amp; trappen</a>
+        <a href="#diensten">Badkamers</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <a href="tel:0643092140">06 43 09 21 40</a>
+        <a href="mailto:Pvanzal@live.nl">Pvanzal@live.nl</a>
+        <span>Kempenland 53</span>
+        <span>1447 CV Purmerend</span>
+        <span>KvK 82221448</span>
+      </div>
+    </div>
+
+    <div class="demo-banner">
+      <p>🛈 Dit is een <b>demo-website</b> en niet de officiële site van PZ Bouw &amp; Timmerwerken.<br>
+      Interesse in een website zoals deze? Neem contact op via <a href="https://brand-on.org" target="_blank" rel="noopener">brand-on.org</a>.</p>
+    </div>
+
+    <p class="copy">© <span id="yr"></span> PZ Bouw &amp; Timmerwerken · Demo gemaakt door Brand-On</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var burger = document.getElementById('burger'), menu = document.getElementById('menu');
+  burger.addEventListener('click', function(){ menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); }); });
+
+  // Scroll reveal
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  // Demo form
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Bedankt! Dit is een demoformulier — neem voor een echte aanvraag contact op via telefoon of e-mail.');
+  });
+</script>
+</body>
+</html>
